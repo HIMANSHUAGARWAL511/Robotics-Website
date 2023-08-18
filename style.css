@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+/********animations*********/
+@keyframes zoom-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes top {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+    transform: rotateZ(-20deg);
+  }
+}
+@keyframes leftSlide {
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes rightSlide {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/***PreLoader**/
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black url("images/giphy.gif") no-repeat center center;
+  z-index: 55;
+  z-index: 999999;
+  background-size: 16%;
+}
+/*******Header********/
+.container-fluid {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid black;
+  margin-top: -8px;
+}
+.color a {
+  color: white !important;
+}
+.btn {
+  background: white !important;
+  border: 2px solid black !important;
+  border-radius: 9px !important;
+}
+
+/*****FRONT PAGE*******/
+.page {
+  margin-top: 1rem;
+}
+.first-page {
+  margin-top: 64px;
+  overflow: hidden;
+}
+.front {
+  width: 100vw;
+  height: 576px;
+  background-attachment: fixed;
+  background-image: url(images/B.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: inherit;
+}
+.right img {
+  animation: left 1s linear 1;
+  transform: rotateZ(-20deg);
+}
+.text1 {
+  font-family: "brush-script-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5271ff;
+  position: absolute;
+  top: 86px;
+  left: 67px;
+  transform: rotateZ(-20deg);
+  z-index: 3;
+  font-size: 32px;
+  animation: left 1s linear 1;
+}
+.head {
+  font-family: "Bagel Fat One", cursive;
+  font-size: 41px;
+  color: #debc59;
+  animation: top 1s ease-in-out 1;
+  margin-top: -8rem;
+}
+.main h1 center {
+  font-size: 5rem;
+  color: #ffcece;
+  overflow: hidden;
+  font-family: "Playfair Display", serif;
+  animation: zoom-in 1s ease-in-out 1;
+}
+.main {
+  margin-top: 9rem;
+}
+/**Second Page**/
+.second-title {
+  font-size: 45px;
+  overflow: hidden;
+}
+.second-subtitle {
+  font-style: italic;
+  overflow: hidden;
+}
+.color-indigo {
+  color: var(--bs-indigo);
+}
+.m-2f20 {
+  margin-top: -2px;
+  font-size: 20px;
+}
+.second-first {
+  font-size: 17px;
+  font-weight: bolder;
+  font-style: italic;
+}
+.second-middle {
+  display: flex;
+  text-align: center;
+}
+.setting-icon i {
+  width: 30px !important;
+}
+.second-middle-text {
+  text-align: left;
+  padding-left: 5px;
+}
+.second-line {
+  background-color: var(--bs-indigo);
+  height: 35px;
+  width: 3px;
+}
+.second-head-line {
+  background-color: var(--bs-indigo);
+  height: 7px;
+  margin: 0 48vw;
+  margin-top: 0px;
+  margin-right: 48vw;
+  margin-bottom: 0px;
+  margin-left: 48vw;
+  border-radius: 14px;
+  margin-top: 17px;
+}
+.SecondPage-text {
+  animation: leftSlide 1s ease-in-out 1;
+}
+
+.second-main-title {
+  animation: rightSlide 1s ease-in-out 1;
+}
+/**Third Page*/
+.coursal-projects {
+  width: 23rem;
+  border: 2px solid gray;
+  height: 23rem;
+  box-shadow: 0 0 18px -5px black;
+  margin: 1rem 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  animation: zoom-in 1s linear 1;
+  border-radius: 2rem;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 2s;
+}
+.coursal-projects:hover {
+  box-shadow: 0px 0 20px 5px #00000080;
+  opacity: 0.9;
+}
+.project-btn button {
+  border: white;
+  background: white;
+  font-size: 25px;
+  border-radius: 50%;
+  width: 32px;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.project-btn button:hover {
+  opacity: 1;
+}
+/**Contact Us**/
+.contact {
+  display: flex;
+  width: 100%;
+}
+/***footer*/
+.instagram button {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.github button {
+  background-color: black;
+}
+.linkedin button {
+  background-color: #00a0dc;
+}
+.twitter button {
+  background-color: #1da1f2;
+}
+.twitter button:hover i {
+  color: #1da1f2 !important;
+}
+.icon:hover {
+  background-color: white;
+  transition: all 0.5s;
+}
+.linkedin button:hover i {
+  color: #00a0dc !important;
+}
+.instagram button:hover {
+  background-color: white;
+  transition: all 0.5s;
+}
+.instagram button:hover i {
+  color: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  ) !important;
+}
+.github button:hover i {
+  color: #000 !important;
+}
+.icon {
+  border: none;
+  width: 30px;
+
+  border-radius: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+.footer-container {
+  background-color: #4a4c4d;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+.footer-heading {
+  color: aliceblue;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.bottom {
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 1rem;
+  font-size: 1.1rem;
+  border-top: 4px solid black;
+  background-color: #ffd2c154;
+}
+.developer {
+  text-decoration: none;
+  color: #000;
+}
+@media screen and (max-width: 770px) {
+  .right-design {
+    display: none;
+  }
+  .head {
+    margin-top: 0rem;
+  }
+  .fourth-content {
+    flex-direction: column;
+  }
+  .fourth-left iframe {
+    width: 22rem;
+  }
+  .fourth-right {
+    margin-top: 2rem;
+  }
+}
